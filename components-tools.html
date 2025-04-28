@@ -22,7 +22,7 @@
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@550;600&amp;display=swap"><link rel="stylesheet" href="/assets/css/styles.b2eb940a.css">
-<script src="/assets/js/runtime~main.0aa38636.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.19c2a78d.js" defer="defer"></script>
 <script src="/assets/js/main.0be1333e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -88,11 +88,11 @@ For an example, see <a href="/agents-tool-calling-agent-component#make-any-compo
 <table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>Tool</td><td>Calculator tool for use in LangChain</td></tr></tbody></table>
 <p>This component allows you to evaluate basic arithmetic expressions. It supports addition, subtraction, multiplication, division, and exponentiation. The tool uses a secure evaluation method that prevents the execution of arbitrary Python code.</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="combinatorial-reasoner">Combinatorial Reasoner<a href="#combinatorial-reasoner" class="hash-link" aria-label="Direct link to Combinatorial Reasoner" title="Direct link to Combinatorial Reasoner">​</a></h2>
-<p>This component runs Icosa&#x27;s Combinatorial Reasoning (CR) pipeline on an input to create an optimized prompt with embedded reasons. Sign up for access here: <a href="https://forms.gle/oWNv2NKjBNaqqvCx6" target="_blank" rel="noopener noreferrer">https://forms.gle/oWNv2NKjBNaqqvCx6</a></p>
+<p>This component runs Icosa&#x27;s Combinatorial Reasoning pipeline on an input to create a prompt with optimized test-time compute. Users have the choice to use an optimized prompt with any LLM on langflow or use the optimal response generated from an Icosa selected language model. Sign up for access at icosacomputing.com</p>
 <h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="inputs-5">Inputs<a href="#inputs-5" class="hash-link" aria-label="Direct link to Inputs" title="Direct link to Inputs">​</a></h3>
-<table><thead><tr><th>Name</th><th>Display Name</th><th>Description</th></tr></thead><tbody><tr><td>prompt</td><td>Prompt</td><td>Input to run CR on</td></tr><tr><td>openai_api_key</td><td>OpenAI API Key</td><td>OpenAI API key for authentication</td></tr><tr><td>username</td><td>Username</td><td>Username for Icosa API authentication</td></tr><tr><td>password</td><td>Password</td><td>Password for Icosa API authentication</td></tr><tr><td>model_name</td><td>Model Name</td><td>OpenAI LLM to use for reason generation</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Display Name</th><th>Description</th></tr></thead><tbody><tr><td>prompt</td><td>Prompt</td><td>Input to run CR on</td></tr><tr><td>icosa_api_key</td><td>Icosa API Key</td><td>Icosa API key for authentication</td></tr><tr><td>prompt_type</td><td>Type</td><td>Method used to construct optimized prompt</td></tr></tbody></table>
 <h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="outputs-5">Outputs<a href="#outputs-5" class="hash-link" aria-label="Direct link to Outputs" title="Direct link to Outputs">​</a></h3>
-<table><thead><tr><th>Name</th><th>Display Name</th><th>Description</th></tr></thead><tbody><tr><td>optimized_prompt</td><td>Optimized Prompt</td><td>A message object containing the optimized prompt</td></tr><tr><td>reasons</td><td>Selected Reasons</td><td>A list of the selected reasons that are embedded in the optimized prompt</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Display Name</th><th>Description</th></tr></thead><tbody><tr><td>optimized_prompt</td><td>Optimized Prompt</td><td>A message object containing the optimized prompt</td></tr><tr><td>response</td><td>Response</td><td>A message object containing the optimal response from LLM chosen</td></tr><tr><td>reasons</td><td>Selected Reasons</td><td>A list of the selected reasons that are embedded in the optimized prompt</td></tr></tbody></table>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="duckduckgo-search">DuckDuckGo search<a href="#duckduckgo-search" class="hash-link" aria-label="Direct link to DuckDuckGo search" title="Direct link to DuckDuckGo search">​</a></h2>
 <p>This component performs web searches using the <a href="https://www.duckduckgo.com" target="_blank" rel="noopener noreferrer">DuckDuckGo</a> search engine with result-limiting capabilities.</p>
 <h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="inputs-6">Inputs<a href="#inputs-6" class="hash-link" aria-label="Direct link to Inputs" title="Direct link to Inputs">​</a></h3>
